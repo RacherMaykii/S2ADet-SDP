@@ -1,0 +1,34 @@
+# COCO 2017 dataset http://cocodataset.org - first 128 training images
+# Train command: python train.py --data coco128.yaml
+# Default dataset location is next to YOLOv5:
+#   /parent_folder
+#     /coco128
+#     /yolov5
+
+
+# download command/URL (optional)
+download: https://github.com/ultralytics/yolov5/releases/download/v1.0/coco128.zip
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+
+train_rgb: /root/autodl-tmp/dataset/pedestrian/sa/images/train/  # 128 images
+train_rgb_add: /root/autodl-tmp/dataset/pedestrian/sobel/images/train/
+val_rgb: /root/autodl-tmp/dataset/pedestrian/sa/images/test/ # 128 images
+val_rgb_add: /root/autodl-tmp/dataset/pedestrian/sobel/images/test/
+train_ir: /root/autodl-tmp/dataset/pedestrian/se/images/train/  # 128 images
+train_ir_add: /root/autodl-tmp/dataset/pedestrian/NDVI/images/train/
+val_ir:  /root/autodl-tmp/dataset/pedestrian/se/images/test/ # 128 images
+val_ir_add: /root/autodl-tmp/dataset/pedestrian/NDVI/images/test/
+
+# fan guo lai
+
+# train_ir: /data/multispectral-object-detection/dataset/FLIR_ADAS_1_3/rgb/images/train_rgb/  # 128 images
+# val_ir: /data/multispectral-object-detection/dataset/FLIR_ADAS_1_3/rgb/images/val_rgb/ # 128 images
+# train_rgb: /data/multispectral-object-detection/dataset/FLIR_ADAS_1_3/ir/images/train_ir/  # 128 images
+# val_rgb:  /data/multispectral-object-detection/dataset/FLIR_ADAS_1_3/ir/images/val_ir/ # 128 images
+
+# number of classes
+nc: 8
+
+# class names
+names: ["car", "pedestrian", "bike", "awning-bike", "van", "truck", "bus", "tricycle"]
