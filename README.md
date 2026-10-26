@@ -1,6 +1,6 @@
 # S2ADet-SDP
 
-PyTorch implementation for **Semantic-Guided Feature Enhancement for Pedestrian Detection in Aerial Multispectral Images**.
+PyTorch implementation for **Spectral-Prior-Guided Feature Enhancement for Pedestrian Detection in Aerial Multispectral Images**.
 
 S2ADet-SDP extends the dual-stream S2ADet framework with spectral-difference-prior guided feature enhancement for pedestrian detection in aerial multispectral images. The method uses auxiliary semantic maps, such as NDVI-derived cues, to enhance shallow features and suppress vegetation-related false detections.
 
